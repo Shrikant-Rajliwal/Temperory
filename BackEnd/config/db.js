@@ -1,13 +1,13 @@
 // src/config/db.js
 import mongoose from "mongoose" 
-// import dotenv from "dotenv"
+import dotenv from "dotenv"
 
 
-// dotenv.config()
+dotenv.config()
 
 const connectDb = async () => {
     try {
-        await mongoose.connect("mongodb+srv://shrikant:d0ZEbVUtl0Bws6tR@cluster0.pkbh9xo.mongodb.net/crud");
+        await mongoose.connect(process.env.MONGO_URI);
         console.log("Connected to DB");
     } catch (error) {
         console.error("Database connection failed:", error.message);
