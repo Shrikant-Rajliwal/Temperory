@@ -27,7 +27,7 @@ const AddProduct = () => {
     };
 
     try {
-      const res = await axios.post("https://temperory-backend-ee5o.onrender.com/items/create", productData, {
+      const res = await axios.post("https://temperory-backend.onrender.com/items/create", productData, {
         headers: {
           "Content-Type": "application/json",
         },
