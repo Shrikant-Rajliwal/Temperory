@@ -22,7 +22,7 @@ const Login = () => {
     try {
       // Simulate API call
       // Replace this with your actual API request
-      const response = await fetch('http://localhost:8800/admin/login', {
+      const response = await fetch('https://temperory-backend-ee5o.onrender.com/admin/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password }),
