@@ -12,7 +12,7 @@ const Admin = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8800/items/getAll')
+      .get('https://temperory-backend-ee5o.onrender.com/items/getAll')
       .then((response) => {
         setItems(response.data);
       })
