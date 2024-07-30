@@ -12,7 +12,7 @@ const Admin = () => {
 
   useEffect(() => {
     axios
-      .get('https://temperory-backend-ee5o.onrender.com/items/getAll')
+      .get('https://temperory-backend.onrender.com/items/getAll')
       .then((response) => {
         setItems(response.data);
       })
@@ -25,7 +25,7 @@ const Admin = () => {
     const isConfirmed = window.confirm('Do you want to delete this item?');
     if (isConfirmed) {
       try {
-        await axios.delete(`http://localhost:8800/items/delete/${itemId}`);
+        await axios.delete(`https://temperory-backend.onrender.com/items/delete/${itemId}`);
         setItems(items.filter((item) => item._id !== itemId));
         console.log('Item deleted successfully');
       } catch (error) {
