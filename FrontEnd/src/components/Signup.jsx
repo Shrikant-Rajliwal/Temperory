@@ -19,7 +19,7 @@ const AdminSignup = () => {
     e.preventDefault();
     try {
       console.log(formData);
-      const response = await axios.post('http://localhost:8800/admin/signup', formData);
+      const response = await axios.post('https://temperory-backend-ee5o.onrender.com/admin/signup', formData);
       alert(response.data.message);
       // Navigate to login page after successful signup
       navigate('/login');
