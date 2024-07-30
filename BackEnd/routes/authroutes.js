@@ -1,6 +1,6 @@
 // src/routes/authroutes.js
 import express from 'express';
-import Admin from '../models/adminModel.js';
+import Admin from '../models/adminmodel.js';
 
 const router = express.Router();
 
