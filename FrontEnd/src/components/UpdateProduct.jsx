@@ -27,7 +27,7 @@ const UpdateProduct = ({ product, onClose, onUpdate }) => {
 
     try {
       const response = await axios.put(
-        `http://localhost:8800/items/${product._id}`,
+        `https://temperory-backend-ee5o.onrender.com/items/${product._id}`,
         updatedProduct
       );
       console.log("Product updated successfully");
