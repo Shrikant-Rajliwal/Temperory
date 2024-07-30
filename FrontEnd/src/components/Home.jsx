@@ -7,7 +7,7 @@ const Home = () => {
 
   useEffect(() => {
     axios
-      .get("https://temperory-backend-ee5o.onrender.com/items/getAll")
+      .get("https://temperory-backend.onrender.com/items/getAll")
       .then((response) => {
         setItems(response.data);
       })
